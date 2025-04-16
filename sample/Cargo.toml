@@ -5,9 +5,9 @@ edition = "2024"
 
 [dependencies]
 anyhow = "1"
-arrow = { version = "54.2.1", features = ["prettyprint"] }
-bytes = "1.10.1"
+arrow = { version = "55", features = ["prettyprint"] }
+bytes = "1"
 futures-util = "0.3.31"
-parquet = { version = "54", features = ["json", "async"] }
-sysinfo = "0.33.1"
-tokio = { version="1.43.0", features=["macros", "rt-multi-thread", "fs"] }
+parquet = { version = "55", features = ["json", "async"] }
+sysinfo = "0.34"
+tokio = { version="1", features=["macros", "rt-multi-thread", "fs"] }

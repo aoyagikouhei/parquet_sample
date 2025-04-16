@@ -23,6 +23,8 @@ async fn main() -> anyhow::Result<()> {
         "group" => group::execute("output.parquet").await?,
         // COMMAND=maker cargo run
         "maker" => maker::execute("result.parquet").await?,
+        // COMMAND=group2 cargo run
+        "group2" => group::execute("result.parquet").await?,
         _ => panic!("Unknown command: {}", command),
     }
 
